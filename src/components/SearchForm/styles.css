@@ -1,0 +1,92 @@
+.SearchFormInput {
+  grid-column: span 12 / span 12;
+}
+
+@media (min-width: 640px) {
+  .SearchFormInput {
+    grid-column: span 6 / span 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .SearchFormInput {
+    grid-column: span 3 / span 3;
+  }
+}
+
+.SearchFormInput-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(55, 65, 81);
+}
+
+.SearchFormInput-input {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(209, 213, 219);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  color: rgb(55, 65, 81);
+  padding: 0.25rem 0.75rem;
+  line-height: 2rem;
+
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+.SearchFormInput-input {
+}
+
+.SearchFormInput-input:focus {
+  border-color: rgb(99, 102, 241);
+}
+
+.SearchForm {
+  position: relative;
+  align-items: center;
+  padding: 1.25rem 1rem 0;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.SearchForm-inputs {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.SearchForm-button-background {
+  position: absolute;
+  width: 15rem;
+  height: 2.5rem;
+  bottom: -0.75rem;
+  right: 0.75rem;
+  background-color: rgb(75, 85, 99);
+  transform: rotate(1deg);
+  border-radius: 0.375rem;
+}
+
+.SearchForm-button {
+  position: absolute;
+  width: 15rem;
+  height: 2.5rem;
+  bottom: -1rem;
+  right: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: rgb(251, 191, 36);
+  color: rgb(55, 65, 81);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.375rem;
+
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  transform: rotate(0deg) scale(1);
+}
+
+.SearchForm-button:hover {
+  transform: rotate(-1deg) scale(1.05);
+}

@@ -1,0 +1,10 @@
+.HotelList {
+  display: grid;
+  gap: 2rem;
+}
+
+/* @media (min-width: 1024px) {
+  .HotelList {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
